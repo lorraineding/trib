@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>“There’s a level of trust that isn’t there” | McGill Tribune</title>
+		<meta property="og:title" content="“There’s a level of trust that isn’t there” | McGill Tribune">
+        <meta property="og:type" content="article">
+        <meta property="og:image" content="http://mcgilltribune.com/trust-isnt-there/Header3.jpg">
+        <meta property="og:description" content="Understanding the barriers to disclosing sexual violence">
+        <meta property='fb:app_id' content='557454064410342'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <meta name="author" content="Claire Hurley">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+		<link rel="icon" type="image/png" href="http://mcgilltribune.com/wp-content/uploads/2015/09/favicon.ico">
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Playfair+Display|Roboto+Condensed:700' rel='stylesheet' type='text/css'>
+        <script async="" src="//www.google-analytics.com/analytics.js"></script><script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+                ga('create', 'UA-34387711-1', 'auto');
+                ga('send', 'pageview');
+        </script>
+		<link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+		<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+		<style>
+			body {
+				font-family: serif;
+				background: white;
+
+			}
+			a { color: dodgerblue; }
+
+			p {
+				color: black;
+			}
+
+			p:first-child:first-letter {
+				color: black;
+				float: left;
+				font-family: Kanit;
+				font-size: 75px;
+				line-height: 60px;
+				padding-top: 4px;
+				padding-right: 8px;
+				padding-left: 3px;
+			}
+
+			.section1 {
+				border: 2px solid white;
+			}
+
+			#boxtext1{
+				font-family: Kanit;
+				font-size: 18px;
+				padding-top: 120px;
+				padding-left: 95px;
+				width: 50%;
+				text-shadow: 0.5px 0.5px 2px #d6d6d6;
+				color: black;
+			}
+
+			#boxtext2{
+				font-family: Kanit;
+				font-size: 18px;
+				padding-top: 100px;
+				padding-left: 83px;
+				width: 50%;
+				color: black;
+			}
+
+			#box1 {
+				background: url("media/pull2new.png") no-repeat;
+				background-size: contain;
+				z-index: 10;
+				height: 380px;
+				width: 100%;
+				margin-left: 10%;
+				margin-bottom: 3%;
+			}
+
+			#box2 {
+				background: url("media/pull1new.png") no-repeat;
+				background-size: contain;
+				z-index: 10;
+				height: 390px;
+				width: 100%;
+				margin-left: 10%;
+				margin-bottom: 3%;
+			}
+
+			@media (min-width: 470px) and (max-width: 960px) {
+
+				#box1 {
+					background: url("media/pull2new.png") no-repeat;
+					background-size: contain;
+					z-index: 10;
+					height: 380px;
+					width: 100%;
+					margin-left: 5%;
+					margin-bottom: 3%;
+				}
+
+				#box2 {
+					background: url("media/pull1new.png") no-repeat;
+					background-size: contain;
+					z-index: 10;
+					height: 390px;
+					width: 100%;
+					margin-left: 5%;
+					margin-bottom: 3%;
+				}
+
+				#boxtext1{
+					font-family: Kanit;
+					font-size: 14px;
+					padding-top: 20%;
+					padding-left: 95px;
+					width: 50%;
+					text-shadow: 0.5px 0.5px 2px #d6d6d6;
+					color: black;
+				}
+
+				#boxtext2{
+					font-family: Kanit;
+					font-size: 13px;
+					padding-top: 20%;
+					padding-left: 83px;
+					width: 60%;
+					color: black;
+				}
+			}
+
+			@media (max-width: 470px) {
+				#box1 {
+					background: url("media/pull2new.png") no-repeat;
+					background-size: contain;
+					z-index: 10;
+					height: 250px;
+					width: 100%;
+					margin: 0;
+				}
+
+				#box2 {
+					background: url("media/pull1new.png") no-repeat;
+					background-size: contain;
+					z-index: 10;
+					height: 280px;
+					width: 100%;
+					margin: 0;
+				}
+
+				#boxtext1{
+					font-size: 13px;
+					padding-top: 15%;
+					padding-left: 12%;
+					width: 80%;
+				}
+
+				#boxtext2 {
+					font-size: 10px;
+					padding-top: 15%;
+					padding-left: 50px;
+					width: 77%;
+				}
+
+			}
+		</style>
+
+	</head>
+	<body>
+
+		<script>
+            $( document ).ready(function() {
+                var image= document.getElementById("imgs");
+                var i = 0;
+                var images=[
+                    "Header.jpg",
+                    "Header2.jpg",
+                    "Header3.jpg",
+					"Header4.jpg"
+                ];
+                var totalpics = images.length - 1;
+
+                function loop(){
+                    if(i>totalpics){
+                        i=0;
+                    }
+                    image.src = images[i];
+                    i++;
+                    setTimeout(loop, 800);
+                }
+                loop();
+            });
+
+
+		</script>
+		<div class="header">
+			<a href="http://www.mcgilltribune.com"><img src="media/trib-logo-white.png" alt=""></a>
+
+		</div>
+		<div class="head">
+			<img id="imgs" src="Header.jpg">
+		</div>
+		<div class='story-meta'>
+			<h1 class='title'>“There’s a level of trust that isn’t there”</h1>
+			<h3 class='subtitle'>Campus and province-wide gaps in mental health support</h3>
+			<h6 class='byline'>By Claire Hurley, Contributor</h6>
+		</div>
+
+		<section class="section1">
+			<div class="innerwrap ltr">
+				<p>
+					When I walked out of a meeting with a professor to hyperventilate in the privacy of an empty Arts building bathroom, I knew my situation had become precarious. But it was late March of my third year, the busiest time of my busiest semester, and I had to return to his office. I walked back in and sat down. My professor discretely pushed a box of Kleenex across the desk. I hadn’t realized that I was still crying. We agreed that I would get the first 25 pages of my honours thesis to him by Friday.
+				</p>
+				<p>
+					Mental health discourse occupies an odd and discomforting position on university campuses today. Endless initiatives pushing for increased ‘awareness’—some genuine, some <a href="https://www.cbc.ca/news/health/bell-employees-stressed-by-sales-targets-1.4418876">less so</a>—have made the topic hypervisible, obscuring the problem itself: University students face an <a href="https://montrealgazette.com/news/local-news/mental-health-on-campus">unprecedented mental health crisis</a>, which seems only to be snowballing. The gap between rhetoric and practice widens.
+				</p>
+				<p>
+					On Jan. 28, 2019, McGill’s Media Relations Office issued a <a href="https://www.mcgill.ca/newsroom/channels/news/student-mental-health-services-mcgill-transformed-new-rossy-student-wellness-hub-293744">press release</a> announcing a “new model of care” for student mental health, embodied in the forthcoming Rossy Student Wellness Hub. Though the initiative’s emphasis on “awareness, prevention and earlier intervention” reads as a noble goal, campus voices have repeatedly <a href="https://www.mcgilldaily.com/2018/01/mcgill-mental-health-faces-continued-criticism/">questioned</a> the university’s handling of their Counselling and Mental Health Services (CMHS) in recent years. A trend in administrative reform seems to have prioritised cosmetic changes and the merging of distinct branches of student mental health services, resulting in a shortage of specialised care. The $14-million project is described as a “one-stop shop,” combining the Health Clinic and Counselling and Psychiatric Services, with two new additions: the “Healthy Living Annex” devoted to outreach, and “The Hub Commons,” essentially a lounge space for students to “relax before appointments.”
+				</p>
+				<p>
+					In an email correspondence with <i>The McGill Tribune</i>, Vera Romano, director of McGill Counselling Services and the Student Wellness Hub, spoke about the growing demand for mental health services at the university.
+				</p>
+				<p>
+					“Demand has been increasing,” Romano wrote. “It is hard to measure demand, as there is no way to include students who choose off-campus resources. However, we know that demand in general, across Canada, has increased by 57% over the past few years.”
+				</p>
+				<p>
+					Despite this clear trend, the lack of on-campus resources for mental health care is <a href="http://www.mcgilltribune.com/opinion/dont-want-rent-lamp-need-see-therapist-0502/">common knowledge</a>: Wait-times to see counsellors extend for weeks, psychiatric services are strained, and follow-up is infrequent. The 2017 <a href="https://www.cbc.ca/news/canada/montreal/mcgill-university-scales-back-its-eating-disorder-program-fails-to-tell-students-1.4297825">dissolution</a> of an integral service, the Eating Disorder Program (EDP), <a href="http://www.mcgilltribune.com/opinion/eating-disorders-accessible-or-adequate-care-0926/">sparked</a> particular outrage in this regard.
+				</p>
+				<div id="box1">
+					<p id="boxtext1">
+						Given its accessible mandate, and the fact that services are mostly provided in English, a significant portion of the Argyle’s clientele is made up of university students.
+					</p>
+				</div>
+				<p>
+					The growing unrest on campus might push students to consider what alternative routes are available to them if they are not getting adequate and timely mental health care through their university. Looking into these routes, however, reveals a host of structural barriers that highlight the difficulty of navigating the system as a student.
+				</p>
+				<p>
+					When asked what resources are available to students, particularly out-of-province students seeking affordable mental health care in Montreal, Romano confirmed that everyone has access to public-sector services.
+				</p>
+				<p>
+					“Many mental health care concerns are in fact treated by general practitioners, which are generally covered by private and provincial insurance plans,” Romano wrote.
+				</p>
+				<p>
+					<a href="https://www.quebec.ca/en/health/finding-a-resource/consult-a-professional/registering-with-a-family-doctor/">Finding and securing a general practitioner in Quebec</a>, however, is a drawn-out process that involves registering on a region-wide waiting list for an indeterminate amount of time. Another option is to independently reach out to family doctors and ask if they are taking on new clients. In any case, the processes function on a long-term timeline, a luxury many students don’t have.
+				</p>
+				<p>
+					Romano also mentioned that students could turn to devoted therapy centres.
+				</p>
+				<p>
+					“The availability and affordability of mental health care services vary greatly depending on the type of service and the number of visits required,” Romano said. “All student insurance plans cover psychotherapy, although the amount covered by each plan differs. Some establishments offer a sliding scale based on income.”
+				</p>
+				<p>
+					<a href="https://argyleinstitute.org/">The Argyle Institute</a> is one such establishment. Patricia Hook Painter, a psychotherapist who has long worked at the Institute, described the Argyle’s mission statement and its sliding-scale fee model.
+				</p>
+				<p>
+					“The Argyle's mission is [...]  to provide affordable therapy, which means at a fee of $40-110 per session depending on income,” Hook Painter wrote. “That means that most students on low income (less than $22,000 per year) pay $40 per session. In addition, the waiting time for service is generally only a week or two.”
+				</p>
+				<p>
+					Given its accessible mandate, and the fact that services are mostly provided in English, a significant portion of the Argyle’s clientele is made up of university students. In turn, the Argyle has have established and maintained a referral partnership with Concordia; their partnership with McGill, however, has ceased to exist in recent years.
+				</p>
+				<p>
+					“In the past, we have taken overflow McGill students, and McGill has paid our minimum fee for them to be seen at the Argyle for a limited number of sessions, but that has not happened for several years now,” Hook Painter wrote.
+				</p>
+				<p>
+					When asked whether McGill has systems in place to refer students to external services in the city, Romano did not comment on the university’s previous partnership with the Argyle or why it ended.
+				</p>
+				<p>
+					Institutions that offer therapy and psychiatric services at a reduced rate, like the Argyle in Westmount and the <a href="http://www.qehc.org/">Queen Elizabeth Health Complex (QEHC)</a> in Notre-Dame-de-Grâce, are valuable recourses for students seeking care outside the university system. Crisis centres such as <a href="https://www.tracom.ca/">Tracom</a> and <a href="https://amiquebec.org/">AMI-Québec</a> also offer treatment to anyone in need, though they focus on emergency situations. Still, all of these institutions are reeling from the province-wide surge in demand following the Quebec government's <a href="https://www.cbc.ca/news/canada/montreal/quebec-to-overhaul-health-care-system-eliminate-thousands-of-jobs-1.2770845">decision</a> to merge hospitals and clinics in 2014. The centralized model cut thousands of service-providing positions to the detriment of holistic mental health care in the province.
+				</p>
+				<p>
+					In an <a href="https://montrealgazette.com/news/local-news/lack-of-mental-health-services-a-growing-problem-in-quebec-activists">interview</a> with the <i>Montreal Gazette</i>, Christine Grou, president of the Ordre des Psychologues du Québec, commented on the increasing difficulty of accessing talk-therapy in the province following the health care reform.
+				</p>
+				<p>
+					“In Quebec, it’s unfortunate that it is easier to benefit from medications for mental health illnesses than to receive psychotherapy,” Grou said.
+				</p>
+				<p>
+					Similarly, part of the current strain on mental health resources at McGill comes out of <a href="http://www.mcgilltribune.com/news/student-services-budget-reallocations-35673/">a history of funding reallocation and budget cuts to Student Services</a>. Romano affirmed that the new Wellness Hub initiative aims to address this issue by bringing in more staff.
+				</p>
+				<p>
+					“Since 2014, we [at Counselling Services] have increased the number of counsellors by 43 [per cent],” Romano wrote. “Twelve Local Wellness Advisors, two Access Clinicians, and a trauma therapist will join our team of mental health professionals by this Fall [2019].”
+				</p>
+				<p>
+					These new positions are sure to be much appreciated by students without long-term needs; however, the Hub’s addition of twelve advisors and only one therapist seems to suggest a continuation of McGill’s emphasis on low-resource care as opposed to specialised treatment.
+				</p>
+				<p>
+					I spoke to Lily* (U3 Arts), who is in her final semester, about the impact that trying to access mental health care following an experience of trauma has had on her studies. As an international student, Lily saw CMHS as her best option, but the time it took for her to be seen defeated the purpose of seeking help in the first place.
+				</p>
+				<p>
+					“The wait time was about three weeks to get an initial consultation appointment,” Lily said. “Then, there was a two-month wait [for psychiatric services], and I was already in this crisis, so I was just dealing with it, and then it went away [….] By the time I went back, I was frustrated because I was like, ‘I needed you two months ago.’”
+				</p>
+				<p>
+					Being one student out of 40,000 can be an alienating experience, and “just dealing with it” is the natural response when channels of support are few and far between in the large bureaucratic apparatus that is McGill. Lily emphasized the disconnect she felt between herself and the university throughout her undergraduate studies.
+				</p>
+				<div id="box2">
+					<p id="boxtext2">
+						“The wait time was about three weeks to get an initial consultation appointment,” Lily said. “Then, there was a two-month wait [for psychiatric services], and I was already in this crisis, so I was just dealing with it, and then it went away [….] By the time I went back, I was frustrated because I was like, ‘I needed you two months ago.’”
+					</p>
+				</div>
+				<p>
+					“An underlying issue of all of this is that, because I don’t have relationships with any of my advisors or professors, there’s no one I’ve seen multiple times,” Lily said. “If I’d had a relationship with an advisor who knew […] the ways that mental health had affected my studies before, that might have been a resource that I could’ve gone to if I was in some sort of a crisis.”
+				</p>
+				<p>
+					The university’s stepped care model, in operation as of 2016, uses a triage system to assess the urgency of students’ needs, as in a walk-in clinic, before determining an appropriate treatment plan. The stepped care model <a href="http://mcgilltribune.com/utilitarian-approach/">prioritizes treatment options considered less resource-intensive</a>, such as group or online counselling. The system echoes an overarching pattern in Quebec of narrowing the channel of patients who are actually eligible to receive one-on-one therapy. McGill counselling services staff <a href="https://www.mcgilldaily.com/2017/01/director-of-counselling-and-mental-health-services-suspended/">have expressed concern</a> over this model, and data from other universities <a href="http://time.com/5190291/anxiety-depression-college-university-students/">shows</a> that, when rapid-access services like triage become a school’s primary focus, long-term services that foster trusting relationships—such as recurring psychotherapy appointments and specialised treatment programs—are neglected.
+				</p>
+				<p>
+					Attending university is often seen as a rite of passage en route to adulthood; it is the time when students acquire a meaningful sense of autonomy. McGill’s hands-off culture endorses and extends this view. If the school’s aloofness is meant to teach independence, it also points to a serious lack of mediation between the institution and the student.
+				</p>
+				<p>
+					“Being a student at McGill specifically, […] I’ve learned how to deal with institutions and bureaucracy where the individuals aren’t necessarily out to get anyone […] but the system is such that you need to advocate for yourself,” Lily said.
+				</p>
+				<p>
+					In retrospect, she considers her recurring struggles with mental health during her undergraduate studies—and the ways these struggles impacted her ability to perform academically—to be partly caused by the fragmented or even absent lines of communication between students and the administration.
+				</p>
+				<p>
+					“I had panic attacks during two of my final exams,” Lily said, “and because I go to McGill, where they were both worth 70 per cent and 80 per cent, I nearly failed the classes. Whereas, if I went to another school where [the finals] were worth 40 per cent, where I had better relationships with the professors, where I had a clearer conversation with the OSD [Office for Students with Disabilities], maybe that would’ve been different.”
+				</p>
+				<p>
+					For many McGill students, university will prove to be the most psychologically and emotionally-taxing time in their life thus far. In emails, Hook Painter commented on the particularity of students’ lived realities.
+				</p>
+				<p>
+					“Students face an inordinate amount of stress and uncertainty; pressure to perform, anxiety about jobs, loan repayments, [et cetera],” Hook Painter wrote in an email to <i>The McGill Tribune</i>. “The world is a very different place from when their parents were at university, so their parents may not be able to understand their experiences and feelings.”
+				</p>
+				<p>
+					Though McGill has adopted a rhetoric of ‘awareness’ as its main concern with students’ mental well-being, the structural hardships facing university students today extend far deeper than simple accessibility to mental health resources on campus. Unprecedented levels of academic stress, allegations of sexual violence against professors, and <a href="https://www.mcgilldaily.com/2018/01/divest-mcgill-mobilizes-students/">antagonism between the student body and administration on matters of social and climate justice</a> are all interconnected issues that can render students mentally unwell or exacerbate pre-existing conditions. When their voices go unheard by McGill, students are less inclined to trust the administration with their mental health. Lily commented on how she perceives students’ relationship with McGill as a source of care.
+				</p>
+				<p>
+					“It [is] a tremendous amount of work, always, to disclose and introduce yourself to someone new and […] defend why you’re there ” Lily said. “There’s a level of trust that isn’t there.”
+				</p>
+				<p>
+					A true overhaul of the student wellness model requires thoughtful revision of the institution-student dynamic at all levels of its operation. McGill has a $1.65 billion endowment and a devoted $14 million Rossy Wellness Hub budget to enact its earlier intervention model. Students’ discontent on campus extends beyond the efficiency of a triage system and calls for more than a perfunctory visit with a wellness advisor. To remedy current infrastructural weakness, a holistic approach to this model requires communicating seriously with students. It requires taking a comprehensive look at the systemic issues that have made McGill a fractured and isolating space for many.
+				</p>
+				<p>
+					Last winter, when crisis situations in my private life coincided with the most demanding portion of my studies, I ultimately ended up benefitting from the relationships that I had built with faculty members whom I trusted. After disclosing the broad strokes of my situation, I was offered the accommodations I needed to complete the semester without permanently damaging my academic record. Until then, I didn’t even know such accommodations existed.
+				</p>
+				<p>
+					I got treatment outside the university, extended my degree by a year, and returned as a part-time student this Fall, having regained the clarity I lost when I first arrived at McGill in 2015. When I graduate in the Spring, I’ll be leaving with the lingering feeling that a legitimate early intervention model could have prevented the collateral damage that recurring major depressive episodes caused to myself and to people close to me during my studies.
+				</p>
+				<p>
+					There are many legitimate reasons why a student might not feel able to disclose a mental illness to their professors. The point is that students should not have to bypass the system— the system should work.
+				</p>
+				<p>*Names have been changed for anonymity.</p>
+
+
+			</div>
+
+            </div>
+        </section>
+		<script>
+            $(document).ready(function(){
+                    $('li .after').on('click mouseover', function(e){
+                    console.log('log')
+                    $('li .before, li .after').show();
+                    $('li div').hide();
+                    var $parent = $(e.target).closest('li');
+                    $parent.find('.after').hide();
+
+                    $parent.find('div').show();
+            });
+            });
+            $(function(){
+            $('.fa-facebook').click(function(){
+            FB.ui(
+            {
+                method: 'share',
+                href: 'http://mcgilltribune.com/mile-end-music-history-montreal-artist'
+            });
+        })
+        })
+		</script>
+	</body>
+</html>
